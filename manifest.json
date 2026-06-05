@@ -1,7 +1,7 @@
 {
-  "id": "kobar.snippetvaultplugin",
+  "id": "snippetvault-plugin",
   "name": "Snippet Vault",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Securely store, categorize, and encrypt your frequently used code blocks and text snippets.",
   "author": "KoBar",
   "entry": "index.js",
@@ -24,5 +24,10 @@
     "ja",
     "hi"
   ],
-  "versionNote": "Initial plugin release for Snippet Vault."
+  "versionNote": "Updated plugin images.",
+  "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/snippetvault.png",
+  "storeImage": [
+    "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/Snippet-Vault1.png",
+    "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/Snippet-Vault2.png"
+  ]
 }

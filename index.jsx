@@ -198,16 +198,14 @@ const SnippetVaultPopup = (props) => {
         const offsetTop = sidebarPosition ? sidebarPosition.y : 0;
         const offsetLeft = sidebarPosition ? sidebarPosition.x : 0;
 
-        const isGlass = design === 'style2';
-        const alpha = Math.round(glassOpacity * 255).toString(16).padStart(2, '0');
-        const bgColor = isGlass ? `#1a1612${alpha}` : '#1a1612';
-
         const baseStyle = {
             position: 'absolute',
-            backgroundColor: bgColor,
-            backdropFilter: isGlass ? (isMac ? 'blur(8px)' : 'blur(20px)') : 'none',
-            WebkitBackdropFilter: isGlass ? (isMac ? 'blur(8px)' : 'blur(20px)') : 'none',
-            border: isGlass ? '1px solid rgba(255, 255, 255, 0.05)' : 'none',
+            backgroundColor: design === 'style2' 
+                ? `color-mix(in srgb, var(--theme-surface) ${glassOpacity}%, transparent)` 
+                : 'var(--theme-bg-dark)',
+            backdropFilter: design === 'style2' ? (isMac ? 'blur(8px)' : 'blur(20px)') : 'none',
+            WebkitBackdropFilter: design === 'style2' ? (isMac ? 'blur(8px)' : 'blur(20px)') : 'none',
+            border: design === 'style2' ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid var(--theme-border)',
             boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
             zIndex: 99999,
             width: '320px',
