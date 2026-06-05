@@ -24,7 +24,6 @@
     "ja",
     "hi"
   ],
-<<<<<<< HEAD
   "versionNote": "Updated plugin images.",
   "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/snippetvault.png",
   "storeImage": [
@@ -32,7 +31,5 @@
     "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/Snippet%20Vault/Snippet-Vault2.png"
   ]
 }
-=======
   "versionNote": "Initial plugin release for Snippet Vault."
 }
->>>>>>> 9393406f76c79b70ebc3da68b8df1514694e8707
